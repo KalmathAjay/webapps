@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <p>Temperature Converter</p>
+      <div class="container">
+        <label for="celsius">Celsius</label>
+        <input type="number" id="celsius" oninput="celToFar()" />
+      </div>
+      <div class="container">
+        <label for="fahrenheit">Fahrenheit</label>
+        <input type="number" id="fahrenheit" oninput="farToCel()" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
