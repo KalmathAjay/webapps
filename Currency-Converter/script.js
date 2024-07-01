@@ -34,7 +34,7 @@ async function getExchangeRate() {
   exRateTxt.innerText = " ";
   try {
     const response = await fetch(
-      `https://v6.exchangerate-api.com/v6/ad644e40cbab4da4ddf6d134/latest/${fromCur.value}`
+      `https://v6.exchangerate-api.com/v6/--ApiKeyFromExchangeRateApi--/latest/${fromCur.value}`
     );
     const result = await response.json();
     const exchangeRate = result.conversion_rates[toCur.value];
